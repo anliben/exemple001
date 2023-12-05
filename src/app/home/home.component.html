@@ -1,0 +1,17 @@
+<div>
+    <div>
+      <h2>Create</h2>
+      <input [(ngModel)]="nome" type="text" id="name" placeholder="name" />
+      <button (click)="create()">Create</button>
+    </div>
+  
+    <h2>Listar</h2>
+  
+    <ul>
+      <div *ngFor="let item of items">
+        <li>Nome: {{item.nome}} <button (click)="edit(item)">Edit </button> <button (click)="delete(item.id)"> Delete</button></li>
+      </div>
+    </ul>
+  
+  </div>
+  
